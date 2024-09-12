@@ -1,0 +1,640 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/photo_2024-08-27_18-24-33.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+   
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  justify-content: space-between;
+    align-items: center;
+}
+nav select{
+    background: transparent;
+    border: 1px solid;
+    border-color: #d3d3d3a3;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 20px;
+    appearance: none;
+    position: relative;
+    color: aliceblue;
+    border-radius: 4px;
+   
+}
+nav img{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+}
+nav button{
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.navbar2{
+    position: relative;
+}
+.img1{
+    position: absolute;
+    width: 22px;
+    margin-left: 10px;
+    top: 0x;
+    height: 30px;
+}
+.img2{
+    position:absolute;
+    width: 7px;
+    height: 5px;
+    margin-left: 110px;
+    top: 16px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 200px;
+}
+.content h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.content h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 10px;
+ }
+ .content h4{
+     font-size: 1rem;
+     font-weight: 400;
+     margin-top: 30px;
+  }
+  .b1,.b2{
+    padding: 8px 20px;
+    border-radius:4px;
+    height: 55px;
+    text-align: left;
+    font-size: 20px;
+ }
+ .b1{
+    width: 390px;
+    background: #0000003d;
+    border: 1px solid #d3d3d387;
+   
+ }
+ .b2{
+    background-color: red;
+    color: white;
+    border: 0;
+    width: 180px;
+    margin-left: 5px;
+    font-weight: 500;
+    position: relative;
+ }
+ .b2::after{
+    content: '>';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 23px;
+}
+.curve{
+    
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 85% 100%;
+    border-top-right-radius: 85% 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    border-top: .25rem solid;
+    border-color: #b50f70;
+    bottom: -20px;
+    left: 0px;
+ }
+ .container h1{
+    font-size: 18px;
+ }
+ .font1{
+    font-size: 25px;
+ }
+ .list{
+    position: relative;
+ }
+ .list ul{
+padding: 20px 10px;
+width: 95%;
+ display: flex;
+ overflow: scroll;
+ gap: 0px;
+ overflow-y: hidden;  
+ overflow-x: hidden;
+position: relative;
+list-style: none;
+ }
+ .list ul img:hover{
+    transform: scale(1.05);
+ }
+
+ .list img{
+    border-radius: 15px;
+    height: 245px;
+    width: 180px;
+    margin-left: 48px;
+}
+.list h1{
+    position:absolute;
+    z-index: 1;
+    font-size: 100px;
+    top: 125px;
+    margin-left: 30px;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color:#ffffffbf ;
+    font-weight: 700;
+}
+ .list button{
+    position: absolute;
+    top: 120px;
+    right: -50px;
+    transform: rotate(90deg);
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    background: #ffffff1c;
+    border: none;
+   
+}
+.list button::after{
+    position: absolute;
+    content: '>';
+    transform: rotate(270deg);
+    font-size: 22px;
+    color:aliceblue;
+    bottom: -2px;
+    left: 50px;
+    z-index: 1;
+}
+#bckbtn1{
+    position: absolute;
+    top: 120px;
+    left: -77px;
+    transform: rotate(90deg);
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    background: #ffffff1c;
+}
+.card{
+    position: relative;
+    width: 18rem;
+    height: 290px;
+    border-radius: 15px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    margin-left: 20px;
+
+}
+.card h2{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.card h4{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.card img{
+   position: absolute;
+    z-index: 1;
+    width: 60px;
+    top: 215px;
+    left: 204px;
+}
+.col-12{
+    margin-top: 15px;
+    width: 100%;
+    
+}
+.accordion-button{
+    background: #303030;
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 500;
+    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif ;
+
+}
+.accordion-item{
+    background: #303030;
+    color: aliceblue;
+}
+.accordion-body{
+    font-size: 23px;
+    font-weight: 400;
+}
+.bottomlast{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center; 
+}  
+.bottomlast form{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.bottomlast h4{
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.bb,.bbc{
+    text-align: left;
+    padding: 8px 20px;
+    font-size: 20px;
+    height: 60px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.bb{
+    width: 600px;
+    background: #30303070;
+    border: 1px solid #d3d3d387;
+    
+}
+.bbc{
+    width: 180px;
+    font-weight: 500; 
+    margin-left: 5px;
+    background-color: red;
+    color: white;
+    position: relative;
+}
+.bbc::after{
+    content: '>';
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    font-size: 23px;
+}
+.footer{
+    height: 300px;
+}
+.footerli{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 150px;
+    margin-top: 15px;
+    
+}
+.footerli ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+   
+}
+.footerli ul a{
+   color: rgba(255, 255, 255, 0.7);
+   font-weight: 300;
+   line-height: 35px;
+}
+.bottomlan{
+    height: 300px;
+    position: relative;
+}
+.bottomlan select{
+    padding: 6px 30px;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+    appearance: none;
+   
+}
+.bottomlan h5{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.67);
+   
+}
+.bimg{
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    left: 90px;
+    top: 66px;
+}
+.bimgg{
+    position: absolute;
+    top: 50px;
+    width: 22px;
+    margin-left: 5px
+}
+@media  screen and (max-width:1400px) {
+    .card{
+        margin-top: 10px;
+        width: 500px;
+        height: 200px;
+        margin-left: 36px;
+        align-items: center;
+    }
+    .card img{
+        width: 45px;
+        top: 134px;
+        left: 413px;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .card{
+        width: 1000px;
+        height: 150px;
+        margin-left: 0px;
+        align-items: start;
+    }
+    .card h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .card h4{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .card img{
+        width: 45px;
+        top: 44px;
+        left: 883px;
+    }
+    
+}
+@media screen and (max-width: 960px) {
+    .main{
+        height: 31rem;
+    }
+    nav img{
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+    .content{
+       z-index: 2; 
+        top: 2.5rem;
+    }
+    .content h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .b1{
+        width: 290px;
+       
+     }
+     .curve{
+       top: 440px;
+       z-index: 1;
+     }
+     .font1{
+        font-size: 20px;
+     }
+     .list ul{
+        width: 95%;
+        margin-left: 10px;
+        gap: 14px;
+     }
+     .list h1{
+        font-size: 60px;
+        top: 97px;
+        margin-left: -3px;
+     }
+     .list img{
+        height: 170px;
+        width: 130px;
+        margin-left: 0px;
+     }
+     .list button{
+        top: 75px;
+        right: -70px;
+    }
+    #bckbtn1{
+        left: -76px;
+        top: 75px; 
+    }
+    .accordion-item{
+     width: 100%;
+    }
+    .accordion-body{
+        width: 100%;
+    }
+    .accordion-button{
+        width: 100%;
+    }
+    .bb{
+        font-size: 14px;
+        height: 47px;
+        width: 500px;
+    }
+    .bbc{
+        font-size: 12px;
+        height: 45px;
+        width: 140px;
+    }
+    .bbc::after{
+        font-size: 14px;
+        right: 10px;
+        top: 9px;
+    }
+    .footerli{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0px;
+        margin-top: 15px;
+        
+    }
+    .card{
+        height:150px ;
+     }
+     .card img{
+        width: 45px;
+        top: 44px;
+        left: 883px;
+    }
+  }
+@media screen and (max-width:600px) {
+    .content{
+        top: 3rem;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 2rem;
+        font-weight: 700;
+       
+    }
+    nav select{
+        width: 40px;
+    }
+    .b1{
+        font-size: small;
+        height: 40px;
+        width: 21.25rem;
+    }
+    .b2{
+        font-size: small;
+        height: 40px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    .b2::after{
+        font-size: large;
+        top: 8px;
+    }
+    .list ul{
+        width: 108%;
+        margin-left: -10px;
+        gap: 14px;
+     }
+     .img2{
+        display: none;
+     }
+     .card{
+        width: 460px;
+        height: 150px;
+        margin-left: 20px;
+     }
+     .list ul{
+        width: 85%;
+        margin-left: 30px;
+        gap: 14px;
+     }
+     .list button{
+        top: 75px;
+        right: -55px;
+    }
+    #bckbtn1{
+        left: -50px;
+        top: 75px; 
+    }
+}
+  @media screen and (max-width:490px){
+    .card{
+        width: 370px;
+        height: 150px;
+        margin-left: 30px;
+     }
+  }
+  @media screen and (max-width:390px){
+   .card{ 
+    width: 310px;
+    height: 150px;
+    margin-left: 15px;
+  }
+  .b1{
+    font-size: small;
+    height: 40px;
+    width: 21.25rem;
+}
+.b2{
+    font-size: small;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+}
+.b2::after{
+    font-size: large;
+    top: 8px;
+}
+.content{
+    top: 3rem;
+    text-align: center;
+}
+.content h1{
+    font-size: 2rem;
+    font-weight: 700;
+   
+}
+}
+@media  screen and (max-width:373px) {
+    .b1{
+        font-size: small;
+        height: 40px;
+        width: 17.25rem;
+    }
+    .b2{
+        font-size: small;
+        height: 35px;
+        width: 135px;
+        margin-top: 10px;
+    }
+    .b2::after{
+        font-size: large;
+        top: 8px;
+    }
+    .content{
+        top: 3rem;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+       
+    }
+    .content h3{
+        font-size: 1rem;
+    }
+    .content h4{
+        font-size: 0.6rem;
+    }
+    .list h1{
+        font-size: 60px;
+        top: 97px;
+        margin-left: -3px;
+     }
+     .list img{
+        height: 160px;
+        width: 114px;
+        margin-left: -4px;
+    
+     }  
+     .list button{
+        top: 75px;
+        right: -55px;
+    }
+    #bckbtn1{
+        left: -64px;
+        top: 75px; 
+    }
+}
+@media screen and (max-width:340px) {
+    .card{ 
+        width: 250px;
+        height: 150px;
+        margin-left: 15px;
+      }
+      .list ul{
+        width: 75%;
+        margin-left: 30px;
+        gap: 14px;
+     }
+   
+}
